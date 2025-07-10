@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Lato", sans-serif;
+  --text-color: #424551;
+  --top-header: white;
+  --bottom-bg-color: rgba(232, 164, 180, 0.514);
+  --btn-color: rgb(255, 94, 0);
+}
+
+body {
+  min-width: 100vw;
+  font-family: var(--main-font);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background-color: var(--top-header);
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px;
+    gap: 40px;
+}
+
+.options {
+  display: flex;
+  gap: 40px;
+  
+}
+
+.options a {
+  font-size: 16px;
+  line-height: 160%;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.1s linear;
+}
+
+.options a:hover {
+    transform: scale(1.05);
+    color: rgb(255, 119, 0);
+}
+
+.navbar img {
+    padding: 10px;
+    max-height: 50px;
+}
+
+.contact-btn button,
+.login-btn button {
+    padding: 10px 25px;
+    font-size: 14px;  
+}
+
+.contact-btn button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background: var(--btn-color);
+  transition: all 0.2s linear;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.contact-btn button:hover {
+  transform: scale(1.05);
+}
+
+.login-btn button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-font);
+    margin-top: 40px;
+}
+
+
+.bar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bar-menu a {
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    color: rgba(154, 156, 165, 1);
+    transition: all 0.2s linear;
+    border-radius: 10px;
+}
+
+.bar-menu a:hover {
+    transform: scale(1.05);
+    color: #F75E05;
+    border: 2px solid #F75E05;
+}
+
+.bar-menu input {
+    padding: 11px 204px 11px 16px;
+    margin-left: 50px;
+}
+
+
+.teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    max-width: 1200px;
+}
+
+.teacher-1 {
+    margin-top: 20px;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    width: 390px;
+    height: 430px;
+}
+
+.level {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(3, 206, 164, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+    display: flex;
+    text-align: start;
+}
+
+.salary {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: start;
+}
+
+.teacher-1 {
+    transition: all 0.2s linear;
+}
+
+.teacher-1:hover {
+    transform: scale(1.05);
+}
+
+
+.level-1-1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(90, 135, 252, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(248, 152, 40, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(3, 206, 164, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(245, 47, 110, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(90, 135, 252, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-5 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(119, 114, 241, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-6 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(248, 152, 40, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.level-7 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100px;
+    padding: 1px 8px;
+    background-color: rgba(245, 47, 110, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.loading {
+    font-family: var(--main-font);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.footer-top {
+    position: relative;
+    margin-top: 20px;
+    height: 564px;
+    padding: 60px 20px;
+    background-color: var(--bottom-bg-color);
+    text-align: center;
+    overflow: hidden;
+}
+  
+.footer-title p {
+    font-weight: 600;
+    color: rgba(30, 33, 44, 1);
+    margin-bottom: 10px;
+}
+  
+.footer-title h2 {
+    font-size: 32px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+  
+.img-left,
+.img-right {
+    position: absolute;
+    bottom: 0;
+    width:400px;
+    height: auto;
+    z-index: 0;
+}
+  
+.img-left {
+    left: 0;
+}
+  
+.img-right {
+    right: 0;
+}
+  
+
+
+.email-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.email-btn input[type="email"] {
+    padding: 12px 16px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+  
+.email-btn button {
+    padding: 12px 24px;
+    background-color: #FF3F3A;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.email-btn button:hover {
+    background-color: #d7332f;
+}
+
+
+.footer {
+    background-color: #1e1e26;
+    color: #a6a6a6;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+  
+.footer-col {
+    flex: 80px;
+    min-width: 200px;
+}
+  
+.footer-col h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+  
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-col ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+  
+.footer-col ul li:hover {
+    color: #ff3f3a;
+}
+  
+.about h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+  
+.about p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+  
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+  
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+  
+.social-icons img:hover {
+    color: white;
+    opacity: 10;
+}
+  
+.newsletter {
+    display: flex;
+    background-color: #2c2c35;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    max-width: 280px;
+}
+  
+.newsletter input {
+    border: none;
+    padding: 12px;
+    background: transparent;
+    color: white;
+    flex: 1;
+    font-size: 14px;
+    outline: none;
+}
+  
+.newsletter button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.footer small {
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+    color: #888;
+}
